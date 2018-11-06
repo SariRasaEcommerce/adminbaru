@@ -1,7 +1,11 @@
 <div class="main-panel">
-				<div class="content">
-					<div class="container-fluid">
-						<h4 class="page-title">Data Pengguna</h4>
+	<div class="content">
+		<div class="container-fluid">
+			<h4 class="page-title">Typography</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card" style="padding: 20px">
+						<h4 class="page-title">Beranda</h4>
 						<div class="row">
 							<div class="col-md-3">
 								<div class="card card-stats card-warning">
@@ -79,3 +83,4 @@
 									</div>
 								</div>
 							</div>
+						</div>

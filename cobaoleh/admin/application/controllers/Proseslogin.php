@@ -32,7 +32,7 @@ class Proseslogin extends CI_Controller {
  
             $this->session->set_userdata($data_session);
  
-            redirect(base_url("index.php/Home/Dashboard"));
+            redirect(base_url("index.php/Home"));
  
         }else{
             echo "<script>alert('Username dan Password Salah !');</script>";
