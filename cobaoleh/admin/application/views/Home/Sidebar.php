@@ -28,7 +28,7 @@
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="datapengguna">
+							<a href="<?php echo base_url() ?>index.php/Data_pengguna">
 								<i class="la la-keyboard-o"></i>
 								<p>Data Pengguna</p>
 <!-- 								<span class="badge badge-count">50</span>
@@ -42,14 +42,14 @@
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="datatransaksi">
+							<a href="<?php echo base_url() ?>index.php/Data_transaksi">
 								<i class="la la-bell"></i>
 								<p>Data Transaksi</p>
 <!-- 								<span class="badge badge-success">3</span>
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="dataadmin">
+							<a href="<?php echo base_url() ?>index.php/Data_admin">
 								<i class="la la-font"></i>
 								<p>Data Admin</p>
 <!-- 								<span class="badge badge-danger">25</span>
