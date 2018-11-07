@@ -3,7 +3,7 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<div class="logo-header">
-				<a href="dashboard" class="logo">
+				<a href="<?php echo base_url() ?>index.php/Home" class="logo">
 					Sari Rasa
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +46,8 @@
 									<div class="user-box">
 										<div class="u-img"><img src="<?php echo base_url() ?>assets/webadmin/img/profile.jpg" alt="user"></div>
 										<div class="u-text">
-											<h4>Rahmadi</h4>
-											<p class="text-muted">rahmadi@gmail.com</p></div>
+											<h4><?php echo $this->session->userdata('nama'); ?></h4>
+											<!-- <p class="text-muted">rahmadi@gmail.com</p></div> -->
 										</div>
 									</li>
 									<div class="dropdown-divider"></div>

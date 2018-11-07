@@ -34,14 +34,14 @@
                                             {
                                         ?>
                                         <tr>
-                                            <th scope="row"><?php echo $no++?></th>
+                                            <td scope="row"><?php echo $barang -> ID_BARANG ?></td>
                                             <td><?php echo $barang -> ID_ADMIN ?></td>
                                             <td><?php echo $barang -> NAMA_BARANG ?></td>
                                             <td><?php echo $barang -> HARGA_BARANG ?></td>
                                             <td><?php echo $barang -> DESKRIPSI ?></td>
                                             <td><?php echo $barang -> BERAT ?></td>
                                             <td><?php echo $barang -> STOK ?></td>
-                                            <td><img src="<?php echo base_url().$barang -> IMG ?>" width="100" height="80"></td>
+                                            <td><?php echo $barang -> IMG ?></td>
                                             <td><a href="<?php echo base_url('index.php/Data_barang/edit/'.$barang -> ID_BARANG) ?>"><button class="btn btn-primary">EDIT</button></a>
                                                 <a href="<?php echo base_url('index.php/Data_barang/hapus/'.$barang-> ID_BARANG) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
                                         </tr>
@@ -53,5 +53,5 @@
                             </div>
                         </div>
                     </div>
-<?php $this->load->view('Home/Sidebar'); ?>
+<?php $this->load->view('Sidebar/databarang'); ?>
 <?php $this->load->view('Home/Footer'); ?>

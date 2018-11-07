@@ -3,7 +3,11 @@
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
+<<<<<<< HEAD
             <h4 class="page-title">Pemesanan</h4>
+=======
+            <h4 class="page-title">Data Pemesanan</h4>
+>>>>>>> c5025ddcc874f98694e1ffee2c15c812250e73b6
             <div class="row">
                 <div class="col-md-12">
   <div class="card">
@@ -57,5 +61,5 @@
       </div>
     </div>
   </div>
-  <?php $this->load->view('Home/Sidebar'); ?>
+  <?php $this->load->view('Sidebar/datapemesanan'); ?>
   <?php $this->load->view('Home/Footer'); ?>

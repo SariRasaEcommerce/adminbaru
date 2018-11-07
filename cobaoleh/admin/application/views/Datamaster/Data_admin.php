@@ -8,14 +8,17 @@
                 <div class="col-md-12">
   <div class="card">
     <div class="card-header">
-      <div class="card-title">Data Admin</div>
+      <div class="card-title">Responsive Table</div>
     </div>
     <div class="card-body">
+      <div class="card-sub">
+        Create responsive tables by wrapping any table with <code class="highlighter-rouge">.table-responsive</code> <code class="highlighter-rouge">DIV</code> to make them scroll horizontally on small devices
+      </div>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th>No.</th>
+              <th>#</th>
               <th>Table heading</th>
               <th>Table heading</th>
               <th>Table heading</th>
@@ -57,5 +60,5 @@
       </div>
     </div>
   </div>
-  <?php $this->load->view('Home/Sidebar'); ?>
+  <?php $this->load->view('Sidebar/dataadmin'); ?>
   <?php $this->load->view('Home/Footer'); ?>
