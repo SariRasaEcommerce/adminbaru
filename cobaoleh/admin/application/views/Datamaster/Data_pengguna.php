@@ -3,58 +3,46 @@
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
-            <h4 class="page-title">Data Barang</h4>
+            <h4 class="page-title">Data Pelanggan</h4>
             <div class="row">
                 <div class="col-md-12">
   <div class="card">
     <div class="card-header">
-      <div class="card-title">Responsive Table</div>
+      <div class="card-title">Data Diri Pelanggan</div>
     </div>
     <div class="card-body">
-      <div class="card-sub">
-        Create responsive tables by wrapping any table with <code class="highlighter-rouge">.table-responsive</code> <code class="highlighter-rouge">DIV</code> to make them scroll horizontally on small devices
-      </div>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>Tanggal Lahir</th>
+              <th>Jenis Kelamin</th>
+              <th>No Telp</th>
+              <th>Alamat</th>
+              <th>Email</th>
             </tr>
           </thead>
           <tbody>
+            <?php 
+              $no = 1;
+              foreach ($data_pengguna as $pengguna) 
+              {
+            ?>
             <tr>
-              <th scope="row">1</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
+              <th scope="row"><?php echo $no++?></th>
+              <td><?php echo $pengguna -> ID_PELANGGAN ?></td>
+              <td><?php echo $pengguna -> NAMA_PEL ?></td>
+              <td><?php echo $pengguna -> TGL_LAHIR ?></td>
+              <td><?php echo $pengguna -> JK ?></td>
+              <td><?php echo $pengguna -> NO_TELP ?></td>
+              <td><?php echo $pengguna -> ALAMAT_PEL ?></td>
+              <td><?php echo $pengguna -> EMAIL ?></td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
+            <?php
+              }
+            ?>
           </tbody>
         </table>
       </div>

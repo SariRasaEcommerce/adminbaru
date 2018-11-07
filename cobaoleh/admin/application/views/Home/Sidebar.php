@@ -42,13 +42,6 @@
  -->							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url() ?>index.php/Data_transaksi">
-								<i class="la la-bell"></i>
-								<p>Data Transaksi</p>
-<!-- 								<span class="badge badge-success">3</span>
- -->							</a>
-						</li>
-						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/Data_admin">
 								<i class="la la-font"></i>
 								<p>Data Admin</p>
