@@ -29,8 +29,9 @@ class Data_barang extends CI_Controller {
         	if ($this->upload->do_upload('img'))
     		{
         		$upload_data = $this -> upload -> data ();
-        		$adminn = $this -> input -> post ('adminn');
+        		$adminn = $this->session->userdata('ID_ADMIN');
         		$nm_barang = $this -> input -> post ('nama_brg');
+
         		// $this-> Kategori_model ->get_kategori();
         		$hrg = $this -> input -> post ('hrg');
         		$des = $this -> input -> post ('des');
@@ -59,8 +60,9 @@ class Data_barang extends CI_Controller {
 			echo "string1";
 		}
 	}
-	}
-	public function edit($id){
+}
+
+public function edit($id){
 		$row = $this -> Databarang_model -> get_by_id($id);
 		$this -> load -> library('encrypt');
 		if($row){

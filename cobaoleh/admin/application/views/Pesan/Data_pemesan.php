@@ -3,7 +3,7 @@
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
-            <h4 class="page-title">Data Barang</h4>
+            <h4 class="page-title">Data Pemesanan</h4>
             <div class="row">
                 <div class="col-md-12">
   <div class="card">
@@ -60,5 +60,5 @@
       </div>
     </div>
   </div>
-  <?php $this->load->view('Home/Sidebar'); ?>
+  <?php $this->load->view('Sidebar/datapemesanan'); ?>
   <?php $this->load->view('Home/Footer'); ?>

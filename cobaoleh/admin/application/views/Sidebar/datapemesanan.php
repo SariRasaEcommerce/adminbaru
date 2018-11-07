@@ -14,7 +14,7 @@
 							</a>
 					</div>
 					<ul class="nav">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/Home">
 								<i class="la la-dashboard"></i>
 								<p>Beranda</p>
@@ -34,20 +34,20 @@
 <!-- 								<span class="badge badge-count">50</span>
  -->							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="<?php echo base_url() ?>index.php/Data_pmsan">
 								<i class="la la-th"></i>
 								<p>Data Pemesanan</p>
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/Data_transaksi">
 								<i class="la la-bell"></i>
-								<p>Data Transaksi</p>
+								<p>Data Transaksi</p> -->
 <!-- 								<span class="badge badge-success">3</span>
- -->							</a>
-						</li>
+ -->							<!-- </a>
+						</li> -->
 						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/Data_admin">
 								<i class="la la-font"></i>
@@ -73,8 +73,33 @@
 			<div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
-						<a href="<?php echo base_url() ?>index.php/Home/Dashboard">
 						<h4 class="page-title">Dashboard</h4>
-					</a>
+						<div class="row">
+							<div class="col-md-3">
+								
+							</div>
+							<div class="col-md-3">
+								
+								</div>
+							</div>
+							<div class="col-md-3">
+								
+							</div>
+							<div class="col-md-3">
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								
+							</div>
+							<div class="col-md-9">
+								
+							</div>
+						</div>
+							<div class="col-md-6">
+								
+							</div>
+						</div>
 					</div>
 					</div>
