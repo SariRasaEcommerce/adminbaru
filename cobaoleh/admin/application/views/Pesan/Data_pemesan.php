@@ -3,17 +3,14 @@
   <div class="main-panel">
     <div class="content">
         <div class="container-fluid">
-            <h4 class="page-title">Data Barang</h4>
+            <h4 class="page-title">Pemesanan</h4>
             <div class="row">
                 <div class="col-md-12">
   <div class="card">
     <div class="card-header">
-      <div class="card-title">Responsive Table</div>
+      <div class="card-title">Data Pesanan</div>
     </div>
     <div class="card-body">
-      <div class="card-sub">
-        Create responsive tables by wrapping any table with <code class="highlighter-rouge">.table-responsive</code> <code class="highlighter-rouge">DIV</code> to make them scroll horizontally on small devices
-      </div>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
