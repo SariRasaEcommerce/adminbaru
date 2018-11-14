@@ -8,53 +8,44 @@
                 <div class="col-md-12">
   <div class="card">
     <div class="card-header">
-      <div class="card-title">Responsive Table</div>
+      <div class="card-title">Data Admin</div>
     </div>
     <div class="card-body">
-      <div class="card-sub">
-        Create responsive tables by wrapping any table with <code class="highlighter-rouge">.table-responsive</code> <code class="highlighter-rouge">DIV</code> to make them scroll horizontally on small devices
-      </div>
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead>
+            <a href="<?php echo base_url() ?>index.php/Data_admin/insert"><button class="btn btn-primary">Tambah Data Barang</button></a>
             <tr>
-              <th>#</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
+              <th>No</th>
+              <th>Nama Lengkap</th>
+              <th>Alamat</th>
+              <th>No. Telp</th>
+              <th>Email</th>
+              <th>Foto</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
+            <?php 
+              $no = 1;
+              foreach ($data_admin as $admin) 
+              {
+            ?>
             <tr>
-              <th scope="row">1</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
+              <th scope="row"><?php echo $admin -> ID_ADMIN ?></th>
+              <td><?php echo $admin -> NAMA_ADMIN ?></td>
+              <td><?php echo $admin -> ALAMAT ?></td>
+              <td><?php echo $admin -> NO_TELP ?></td>
+              <td><?php echo $admin -> EMAIL ?></td>
+              <td><img src="<?php echo base_url().$admin -> IMG ?>" width="100" height="100"></td>
+              <td><a href="<?php echo base_url('index.php/Data_admin/edit/'.$admin -> ID_ADMIN) ?>">
+                  <button class="btn btn-primary">EDIT</button></a>
+                  <a href="<?php echo base_url('index.php/Data_admin/hapus/'.$admin-> ID_ADMIN) ?>">
+                  <button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
+            <?php
+              }
+            ?>
           </tbody>
         </table>
       </div>

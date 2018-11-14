@@ -34,14 +34,14 @@
 <!-- 								<span class="badge badge-count">50</span>
  -->							</a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a href="<?php echo base_url() ?>index.php/Data_pmsan">
 								<i class="la la-th"></i>
 								<p>Data Pemesanan</p>
 <!-- 								<span class="badge badge-count">6</span>
  -->							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="<?php echo base_url() ?>index.php/Upload_bukti">
 								<i class="la la-th"></i>
 								<p>Upload Bukti</p>

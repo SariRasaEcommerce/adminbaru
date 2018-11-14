@@ -41,7 +41,7 @@
                                             <td><?php echo $barang -> DESKRIPSI ?></td>
                                             <td><?php echo $barang -> BERAT ?></td>
                                             <td><?php echo $barang -> STOK ?></td>
-                                            <td><?php echo $barang -> IMG ?></td>
+                                            <td><img src="<?php echo base_url().$barang -> IMG ?>" width="100" height="70"></td>
                                             <td><a href="<?php echo base_url('index.php/Data_barang/edit/'.$barang -> ID_BARANG) ?>"><button class="btn btn-primary">EDIT</button></a>
                                                 <a href="<?php echo base_url('index.php/Data_barang/hapus/'.$barang-> ID_BARANG) ?>" ><button class="btn btn-primary" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')">HAPUS</button></a></td>
                                         </tr>

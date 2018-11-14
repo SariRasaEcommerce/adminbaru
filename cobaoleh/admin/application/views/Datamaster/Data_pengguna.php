@@ -48,5 +48,5 @@
       </div>
     </div>
   </div>
-  <?php $this->load->view('Home/Sidebar'); ?>
+  <?php $this->load->view('Sidebar/datapengguna'); ?>
   <?php $this->load->view('Home/Footer'); ?>

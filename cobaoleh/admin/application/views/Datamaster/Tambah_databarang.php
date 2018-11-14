@@ -18,10 +18,10 @@
                                                     <option>1</option>
                                                 </select>
                                             </div> -->
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label for="pillInput">Nama Admin</label>
                                                 <input type="text" class="form-control input-pill" id="pillInput" placeholder="Masukkan Nama Barang" name="adminn">
-                                            </div>
+                                            </div> -->
                                             <div class="form-group">
                                                 <label for="pillInput">Barang</label>
                                                 <input type="text" class="form-control input-pill" id="pillInput" placeholder="Masukkan Nama Barang" name="nama_brg">
@@ -56,5 +56,5 @@
                                         </form>
                                 </div>
                     </div>
-<?php $this->load->view('Home/Sidebar'); ?>
+<?php $this->load->view('Sidebar/databarang'); ?>
 <?php $this->load->view('Home/Footer'); ?>

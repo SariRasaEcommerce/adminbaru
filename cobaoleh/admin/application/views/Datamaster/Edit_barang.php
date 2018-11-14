@@ -57,5 +57,5 @@
                                         </form>
                                 </div>
                     </div>
-<?php $this->load->view('Home/Sidebar'); ?>
+<?php $this->load->view('Sidebar/databarang'); ?>
 <?php $this->load->view('Home/Footer'); ?>
